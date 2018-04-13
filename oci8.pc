@@ -1,0 +1,18 @@
+prefix=/Oracle/instantclient_12_1/sdk
+exec_prefix=${prefix}
+libdir=C:/oracle/instantclient_12_1_64/sdk/lib/msvc
+includedir=C:/oracle/instantclient_12_1_64/sdk/include
+oralib=C:/oracle/instantclient_12_1_64/sdk/lib/msvc
+orainclude=C:/oracle/instantclient_12_1_64/sdk/include
+gcclib=C:/TDM-GCC-64/lib
+gccinclude=C:/TDM-GCC-64/include
+glib_genmarshal=glib-genmarshal
+gobject_query=gobject-query
+glib_mkenums=glib-mkenums
+
+Name: oci8
+Version: 12.1
+Description: oci8 library
+Libs: -L${oralib} -L${gcclib} -loci
+Libs.private:
+Cflags: -I${orainclude} -I${gccinclude}
